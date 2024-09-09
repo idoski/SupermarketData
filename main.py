@@ -10,6 +10,7 @@ customtkinter.set_default_color_theme("dark-blue")
 
 curr_account = None
 app = Interface()
+app.withdraw()
 
 def log_close():
     print("closing!")
@@ -38,6 +39,7 @@ if curr_account is None:
             global curr_account
             curr_account = logged_account
             lwind.destroy()
+            app.deiconify()
 
     lwind = lp.LoginPanel()
     lwind.attributes('-topmost',True)

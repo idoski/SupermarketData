@@ -1,7 +1,7 @@
 import customtkinter as ctk
 import accountinfo.account as ac
 import accountinfo.accountsearch as accs
-import panel
+import apppanel.panel as panel
 
 class LoginPanel(ctk.CTkToplevel):
     def __init__(self) -> None:

@@ -7,7 +7,7 @@ from pathlib import Path
 accounts = {}
 
 try:
-    account_file = Path("./saved.pkl")
+    account_file = Path("saved.pkl")
     if account_file.is_file():
       with open(account_file, 'rb') as fp:
           accounts = pickle.load(fp)
